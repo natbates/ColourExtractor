@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColourExtractor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">ColourExtractor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Extractor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="privacy.html">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="text-center">
+                    <h1 class="display-4">About Colour Extractor</h1>
+                    <p>Welcome to Colour Extractor, a web application designed to help you extract colors from images!</p>
+                </div>
+
+                <div id="how-to-use" class="mt-5">
+                    <h2>How to Use the App</h2>
+                    <p>To extract colors from an image, follow these simple steps:</p>
+                    <ol>
+                        <li>Click on the "Upload Image" button.</li>
+                        <li>Select an image file from your computer.</li>
+                        <li>Wait for the image to upload and color extraction process to complete.</li>
+                        <li>Tune the max number of colours and threshold values to get desired results</li>
+                        <li>View the extracted colors displayed below the uploaded image.</li>
+                        <li>Copy the colours by clicking on them as RGB or HEX and/or export them as a .txt file.</li>
+                    </ol>
+                </div>
+
+                <div id="coming-soon" class="mt-5">
+                    <h2>Coming Soon</h2>
+                    <p>Things coming soon to Colour Extractor</p>
+                    <ol>
+                        <li>Eye dropper tool for finding the colour in the image via mouse.</li>
+                        <li>Colour History and more user customisations.</li>
+                        <li>Conversion page that allows you to turn HEX to RGB and vice versa.</li>
+                        <li>Custom colour pallete control that lets you create your own colours!.</li>
+                    </ol>
+                </div>
+
+                <div id="about-developer" class="mt-5">
+                    <h2>About the Developer</h2>
+                    <p>Hi! Im Nathaniel! A passionate software developer constanlty working on a new project :) If you like what you see, please</p>
+                    <p>check out my <a href="https://natbates.github.io" target="_blank">Portfolio</a>.</p>
+                </div>
+
+                <div id="more-info" class="mt-5">
+                    <h2>More Information</h2>
+                    <p>For more information about Colour Extractor or to provide feedback, please feel free to contact me via my <a href="https://github.com/natbates" target="_blank">GitHub</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-gap"></div>
+        
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - ColourExtractor - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" asp-append-version="true"></script>
+
+</body>
+</html>

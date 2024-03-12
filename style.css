@@ -1,0 +1,138 @@
+html {
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .left-banner {
+      position: fixed;
+      top: 60px; /* Adjust top margin as needed */
+      left: 20px; /* Adjust left margin as needed */
+      bottom: 60px; /* Adjust bottom margin as needed */
+      width: 40px; /* Adjust width as needed */
+      background-color: #000; /* Adjust background color */
+      z-index: 9999; /* Ensure it's above other content */
+  }
+  
+  /* Right banner */
+  .right-banner {
+      position: fixed;
+      top: 20px; /* Adjust top margin as needed */
+      right: 20px; /* Adjust right margin as needed */
+      bottom: 20px; /* Adjust bottom margin as needed */
+      width: 100px; /* Adjust width as needed */
+      background-color: #fff; /* Adjust background color */
+      z-index: 9999; /* Ensure it's above other content */
+  }
+  
+  .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    margin-bottom: 60px;
+  }
+  
+  #drop-area {
+      border: 2px dashed #ccc;
+      border-radius: 20px; /* Adding curved edges */
+      height: 300px; /* Adjusting height */
+      margin: 20px auto;
+      margin-top: 40px;
+      padding: 20px;
+      width: 80%;
+      text-align: center; /* Centering text */
+      display: flex; /* Flexbox for vertical centering */
+      flex-direction: column; /* Align children vertically */
+      justify-content: center; /* Align children vertically */
+  }
+  
+  #drop-area:hover {
+      border-color: #7fc5b8; /* Highlight color when hovered over */
+  }
+  
+  #fileInput {
+      display: none;
+  }
+  
+  .display-4 {
+      margin-bottom: 20px;
+  }
+  
+  .image-container {
+      margin-top: 20px; /* Adjust the gap between the input box and the image output box */
+  }
+  
+  
+  .smaller-h1 {
+      font-size: 1rem; /* Adjust the font size as needed */
+  }
+  
+  .btn-group {
+      margin-bottom: 20px; /* Add margin below the buttons */
+  }
+  
+  #palette-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  
+  #palette {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+  
+  .colour-btn {
+      width: 50px;
+      height: 50px;
+      border: 2px solid black;
+      cursor: pointer;
+      outline: none;
+      border-radius: 10px; /* Adjust the value to increase or decrease the curvature */
+  }
+  
+  .colour-btn:hover {
+      filter: brightness(1.2);
+  }
+  
+  #toggle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+  #toggle-label {
+      margin-left: 10px;
+  }
+  
+  .bottom-gap{
+      margin-bottom: 80px;
+  }
+  
+  #toggle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+  .radio {
+      margin-right: 10px;
+  }
+  
+  .radio-label {
+      margin-left: 5px;
+  }
+  

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColourExtractor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">ColourExtractor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Extractor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="privacy.html">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="text-center mt-3">
+        <h1 class="display-4">Upload Image</h1>
+        <p>Drag and drop or Upload your Images to Extract and view the colours in RGB or HEX format!</p>
+    </div>
+    
+    <div class="text-center mt-3">
+        <button class="btn btn-primary" style="background-color: lightblue; border-color: black;" id="upload-btn">Upload Photo</button>
+    </div>
+    
+    <div id="drop-area" class="text-center">
+        <div class="mb-3">
+            <label for="fileInput" class="form-label">Drag & Drop Images Here or Click to Upload</label>
+            <input type="file" id="fileInput" accept="image/*" multiple style="display: none;">
+        </div>
+    </div>
+    
+    <div class="text-center mt-3">
+        <h1 class="display-4">Image Display</h1>
+        <p>Your upload image wil go here!</p>
+        <p>If you want to upload another image press the delete image button or refresh the page!</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-primary" style="background-color: red; border-color: black;" disabled id="delete-btn">Delete Image</button>
+        </div>
+        <img id="Image" class="image-container" style="width: 800px; height: auto; border: 0px solid black;" disabled>
+    </div>
+    
+    <div class="text-center mt-3">
+        <h1 class="display-4">Palette</h1>
+        <p>Your pallet: Alter the max amount of colours and the similairty threshold values, copy either RGB or</p>
+        <p>HEX value by clicking on the colours! Also press Export for a txt file!</p>
+    </div>
+    
+    <div class="container-fluid d-flex justify-content-center align-items-center mt-3">
+        <div class="container">
+            <div class="row mt-3 justify-content-center">
+                <div class="col-auto pr-4">
+                    <label for="maxColors">Max Colors:</label>
+                    <input type="range" class="custom-range" id="maxColors" min="1" max="200" value="10">
+                    <span id="maxColorsValue">10</span>
+                </div>
+                <div class="col-auto pl-4">
+                    <label for="threshold">Threshold:</label>
+                    <input type="range" class="custom-range" id="threshold" min="1" max="255" value="50">
+                    <span id="thresholdValue">50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-3">
+        <div id="toggle-container">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="mode" value="RGB" id="rgb-mode" checked>
+                    <span class="radio-label">RGB</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="mode" value="HEX" id="hex-mode">
+                    <span class="radio-label">HEX</span>
+                </label>
+            </div>
+        </div>
+    
+        <div id="palette-container">
+            <div id="palette"></div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-3">
+        <button class="btn btn-primary" style="background-color: lightgreen; border-color: black;" disabled id="export-btn">Export Palette</button>
+    </div>
+    
+    
+    <div class="bottom-gap"></div>
+        
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - ColourExtractor - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" asp-append-version="true"></script>
+
+</body>
+</html>
